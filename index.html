@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murtishi Haustechnik GmbH | Sanitär · Heizung · Lüftung · Service</title>
+  <meta name="description" content="Murtishi Haustechnik GmbH – verlässlicher Partner für Sanitär- und Heizungsanlagen bei Neubau und Umbau in Recherswil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <!-- ══════════ NAVIGATION ══════════ -->
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="Murtishi Haustechnik Startseite">
+      <img src="assets/img/logo.png" alt="Murtishi Haustechnik GmbH" class="brand-logo">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link"><span class="nav-icon">🏠</span><span>Start</span></a>
+      <a href="#leistungen" class="nav-link"><span class="nav-icon">🔧</span><span>Leistungen</span></a>
+      <a href="#ueber-uns" class="nav-link"><span class="nav-icon">👥</span><span>Über uns</span></a>
+      <a href="#projekte" class="nav-link"><span class="nav-icon">📐</span><span>Projekte</span></a>
+      <a href="#service" class="nav-link"><span class="nav-icon">⚙️</span><span>Service</span></a>
+      <a href="#kontakt" class="nav-link"><span class="nav-icon">📞</span><span>Kontakt</span></a>
+    </nav>
+
+    <a class="nav-cta" href="tel:+41763904562">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.38 2 2 0 012.2.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      076 390 45 62
+    </a>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO mit Wasserfall-Animation ══════════ -->
+    <section class="hero" id="home">
+      <!-- Wasserfall Hintergrund-Animation -->
+      <div class="waterfall-bg">
+        <canvas id="waterfallCanvas"></canvas>
+        <div class="water-overlay"></div>
+      </div>
+
+      <!-- Wasserfall-Tropfen (CSS) -->
+      <div class="drops-container">
+        <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+        <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+        <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+        <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+        <div class="drop"></div><div class="drop"></div><div class="drop"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-tag reveal">
+          <span class="dot red"></span>Sanitär
+          <span class="dot blue"></span>Heizung
+          <span class="dot red"></span>Lüftung
+          <span class="dot blue"></span>Service
+        </div>
+        <h1 class="hero-title reveal">
+          <span class="line1">Murtishi</span>
+          <span class="line2">Haus<em>technik</em></span>
+        </h1>
+        <p class="hero-sub reveal">Ihr verlässlicher Partner für Sanitär- und Heizungsanlagen — Neubau, Umbau und Service in Recherswil und Umgebung.</p>
+        <div class="hero-actions reveal">
+          <a class="btn primary" href="#kontakt">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Projekt besprechen
+          </a>
+          <a class="btn ghost" href="#leistungen">
+            Leistungen entdecken
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><strong>10+</strong><span>Jahre Erfahrung</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>100%</strong><span>Schweizer Qualität</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>24h</strong><span>Rückruf-Service</span></div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scrollen</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ══════════ LEISTUNGSBAND ══════════ -->
+    <div class="band">
+      <div class="band-track">
+        <span>Sanitärinstallationen</span>
+        <span class="band-dot">◆</span>
+        <span>Heizungsanlagen</span>
+        <span class="band-dot">◆</span>
+        <span>Neubau & Umbau</span>
+        <span class="band-dot">◆</span>
+        <span>Badezimmer-Renovation</span>
+        <span class="band-dot">◆</span>
+        <span>Boiler-Entkalkung</span>
+        <span class="band-dot">◆</span>
+        <span>Spülkastenservice</span>
+        <span class="band-dot">◆</span>
+        <span>Lüftungsanlagen</span>
+        <span class="band-dot">◆</span>
+        <span>Sanitärinstallationen</span>
+        <span class="band-dot">◆</span>
+        <span>Heizungsanlagen</span>
+        <span class="band-dot">◆</span>
+        <span>Neubau & Umbau</span>
+        <span class="band-dot">◆</span>
+        <span>Badezimmer-Renovation</span>
+        <span class="band-dot">◆</span>
+        <span>Boiler-Entkalkung</span>
+        <span class="band-dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ══════════ LEISTUNGEN ══════════ -->
+    <section class="section" id="leistungen">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Was wir bieten</p>
+          <h2>Alles aus einer Hand —<br><em>Sanitär & Heizung</em></h2>
+        </div>
+        <div class="service-grid">
+          <article class="scard reveal">
+            <div class="scard-icon">
+              <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <span class="scard-num">01</span>
+            <h3>Sanitär&shy;installationen</h3>
+            <p>Planung und Ausführung von Sanitäranlagen für Wohn- und Gewerbeobjekte nach modernsten Standards.</p>
+            <div class="scard-line"></div>
+          </article>
+          <article class="scard reveal">
+            <div class="scard-icon">
+              <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="scard-num">02</span>
+            <h3>Heizungs&shy;anlagen</h3>
+            <p>Zuverlässige Lösungen für Neubau, Umbau und Modernisierung — energieeffizient und nachhaltig.</p>
+            <div class="scard-line"></div>
+          </article>
+          <article class="scard reveal">
+            <div class="scard-icon">
+              <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+            </div>
+            <span class="scard-num">03</span>
+            <h3>Umbau & Renovation</h3>
+            <p>Saubere Umsetzung von Badezimmerumbauten und haustechnischen Anpassungen mit Präzision.</p>
+            <div class="scard-line"></div>
+          </article>
+          <article class="scard reveal">
+            <div class="scard-icon">
+              <svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+            </div>
+            <span class="scard-num">04</span>
+            <h3>Service&shy;arbeiten</h3>
+            <p>Boiler-Entkalkung, Spülkastenservice und laufende Unterhaltsarbeiten — schnell und zuverlässig.</p>
+            <div class="scard-line"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ ÜBER UNS ══════════ -->
+    <section class="about-section" id="ueber-uns">
+      <div class="wrap about-wrap">
+        <div class="about-visual reveal">
+          <div class="about-shape">
+            <svg viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Stilisierter Wasserfall / Rohr-Grafik -->
+              <rect x="60" y="20" width="40" height="300" rx="20" fill="url(#pipe1)"/>
+              <rect x="130" y="80" width="40" height="280" rx="20" fill="url(#pipe2)"/>
+              <rect x="200" y="40" width="40" height="320" rx="20" fill="url(#pipe1)"/>
+              <rect x="270" y="100" width="40" height="260" rx="20" fill="url(#pipe2)"/>
+              <!-- Wassereffekt unten -->
+              <ellipse cx="80" cy="330" rx="30" ry="12" fill="#2e9ac0" opacity="0.5"/>
+              <ellipse cx="150" cy="370" rx="30" ry="12" fill="#2e9ac0" opacity="0.5"/>
+              <ellipse cx="220" cy="370" rx="30" ry="12" fill="#2e9ac0" opacity="0.5"/>
+              <ellipse cx="290" cy="370" rx="30" ry="12" fill="#2e9ac0" opacity="0.5"/>
+              <!-- Wellenlinien -->
+              <path d="M40 390 Q100 375 160 390 Q220 405 280 390 Q340 375 380 390" stroke="#2e9ac0" stroke-width="3" opacity="0.6" fill="none"/>
+              <path d="M20 410 Q100 395 160 410 Q220 425 290 410 Q350 395 400 410" stroke="#2e9ac0" stroke-width="2" opacity="0.4" fill="none"/>
+              <defs>
+                <linearGradient id="pipe1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#e63946"/>
+                  <stop offset="100%" stop-color="#9b1a23"/>
+                </linearGradient>
+                <linearGradient id="pipe2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1b4f7a"/>
+                  <stop offset="100%" stop-color="#2e9ac0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="about-badge">
+            <strong>GmbH</strong>
+            <span>Schweizer<br>Qualität</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">Über uns</p>
+          <h2>Qualität, Verlässlichkeit<br>und <em>Leidenschaft</em></h2>
+          <p class="about-lead">Wir sind Ihr Partner für alle sanitären Belange rund um Ihr Haus. Unser Anspruch ist hochwertige, verlässliche Arbeit — damit Ihre Anforderungen mehr als erfüllt werden.</p>
+          <p>Unser freundliches, kompetentes Team von Experten arbeitet effizient mit modernen Standards und Technologien. Von der Planung bis zur Fertigstellung sind wir an Ihrer Seite.</p>
+          <div class="about-features">
+            <div class="afeat"><div class="afeat-icon">✓</div><span>Zuverlässige Terminplanung</span></div>
+            <div class="afeat"><div class="afeat-icon">✓</div><span>Moderne Materialien & Technik</span></div>
+            <div class="afeat"><div class="afeat-icon">✓</div><span>Saubere & präzise Ausführung</span></div>
+            <div class="afeat"><div class="afeat-icon">✓</div><span>Transparente Preisgestaltung</span></div>
+          </div>
+          <a class="btn primary" href="#kontakt">Jetzt Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROJEKTE ══════════ -->
+    <section class="section" id="projekte">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Referenzen</p>
+          <h2>Unsere Arbeit<br><em>spricht für sich</em></h2>
+        </div>
+        <div class="project-grid">
+          <article class="pcard reveal">
+            <div class="pcard-img">
+              <img src="https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_0296.jpg/picture-200?_=19ab09d5cd1" alt="WC Gewerbehalle Recherswil" loading="lazy">
+              <div class="pcard-overlay">
+                <span class="pcard-cat">Projekt</span>
+                <h3>WC – Gewerbehalle Recherswil</h3>
+              </div>
+            </div>
+          </article>
+          <article class="pcard reveal">
+            <div class="pcard-img">
+              <img src="https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_9589.jpg/picture-200?_=19ab09d7ee4" alt="Einlegen Gewerbehalle" loading="lazy">
+              <div class="pcard-overlay">
+                <span class="pcard-cat">Projekt</span>
+                <h3>Einlegen Gewerbehalle Recherswil</h3>
+              </div>
+            </div>
+          </article>
+          <article class="pcard reveal">
+            <div class="pcard-img">
+              <img src="https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.Screenshot%202025-11-22%20140717.png/picture-200?_=19ab0a02d33" alt="MFH Gerlafingen" loading="lazy">
+              <div class="pcard-overlay">
+                <span class="pcard-cat">Projekt</span>
+                <h3>Einlegen MFH Gerlafingen</h3>
+              </div>
+            </div>
+          </article>
+          <article class="pcard reveal">
+            <div class="pcard-img">
+              <img src="https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_1553.jpg/picture-200?_=19ab0a97743" alt="Badezimmer Umbau" loading="lazy">
+              <div class="pcard-overlay">
+                <span class="pcard-cat">Umbau</span>
+                <h3>Badezimmer Umbau EFH</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SERVICE ══════════ -->
+    <section class="service-section" id="service">
+      <div class="water-wave-top">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,20 1440,40 L1440,80 L0,80 Z" fill="#0e2233"/></svg>
+      </div>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow" style="color:#7dd3f5">Service</p>
+          <h2 style="color:#fff">Schnelle Hilfe —<br><em style="color:#7dd3f5">wann Sie uns brauchen</em></h2>
+        </div>
+        <div class="service-cards">
+          <article class="svcard reveal">
+            <div class="svcard-icon">🔥</div>
+            <h3>Boiler Entkalkung</h3>
+            <p>Regelmässige Pflege für maximale Effizienz und lange Lebensdauer Ihrer Anlage.</p>
+          </article>
+          <article class="svcard reveal">
+            <div class="svcard-icon">🚿</div>
+            <h3>Spülkastenservice</h3>
+            <p>Professionelle Servicearbeiten für reibungslose Funktion Ihrer Sanitäranlagen.</p>
+          </article>
+          <article class="svcard reveal">
+            <div class="svcard-icon">📲</div>
+            <h3>Rückruf-Service</h3>
+            <p>Hinterlassen Sie Ihre Anfrage — wir melden uns innerhalb von 24 Stunden zurück.</p>
+          </article>
+        </div>
+      </div>
+      <div class="water-wave-bottom">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,60 1440,40 L1440,0 L0,0 Z" fill="#0e2233"/></svg>
+      </div>
+    </section>
+
+    <!-- ══════════ ÖFFNUNGSZEITEN ══════════ -->
+    <section class="section" id="oeffnungszeiten">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Öffnungszeiten</p>
+          <h2>Montag – Freitag<br><em>für Sie da</em></h2>
+        </div>
+        <div class="hours-strip reveal">
+          <div class="hday"><span class="hday-name">Mo</span><span class="hday-time">7:00–17:00</span></div>
+          <div class="hday"><span class="hday-name">Di</span><span class="hday-time">7:00–17:00</span></div>
+          <div class="hday"><span class="hday-name">Mi</span><span class="hday-time">7:00–17:00</span></div>
+          <div class="hday"><span class="hday-name">Do</span><span class="hday-time">7:00–17:00</span></div>
+          <div class="hday"><span class="hday-name">Fr</span><span class="hday-time">7:00–17:00</span></div>
+          <div class="hday closed"><span class="hday-name">Sa</span><span class="hday-time">Geschlossen</span></div>
+          <div class="hday closed"><span class="hday-name">So</span><span class="hday-time">Geschlossen</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ KARTE ══════════ -->
+    <section class="section map-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Standort</p>
+          <h2>Besuchen Sie uns<br><em>in Recherswil</em></h2>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe title="Google Maps Murtishi Haustechnik" src="https://www.google.com/maps?q=Hauptstrasse%20214%2C%204565%20Recherswil%2C%20Schweiz&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-info">
+            <div class="map-address">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Murtishi Haustechnik GmbH</strong>
+                <span>Hauptstrasse 214, 4565 Recherswil</span>
+              </div>
+            </div>
+            <div class="map-address">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.38 2 2 0 012.2.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+41763904562">076 390 45 62</a>
+              </div>
+            </div>
+            <div class="map-address">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong>E-Mail</strong>
+                <a href="mailto:info@murtishihaustechnik.ch">info@murtishihaustechnik.ch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ KONTAKT ══════════ -->
+    <section class="contact-section" id="kontakt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Schreiben Sie uns —<br><em>wir antworten prompt</em></h2>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <img src="assets/img/logo.png" alt="Murtishi Haustechnik GmbH" class="contact-logo">
+            <p>Zögern Sie nicht, uns zu kontaktieren. Wir besprechen Ihr Projekt gerne unverbindlich und erstellen Ihnen ein individuelles Angebot.</p>
+            <div class="cinfo-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Hauptstrasse 214, 4565 Recherswil
+            </div>
+            <div class="cinfo-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.38 2 2 0 012.2.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+41763904562">076 390 45 62</a>
+            </div>
+            <div class="cinfo-item">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@murtishihaustechnik.ch">info@murtishihaustechnik.ch</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" action="https://formsubmit.co/info@murtishihaustechnik.ch" method="POST">
+            <input type="hidden" name="_subject" value="Neue Anfrage über die Webseite">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Vorname *</label>
+                <input name="vorname" required placeholder="Max">
+              </div>
+              <div class="form-field">
+                <label>Nachname *</label>
+                <input name="nachname" required placeholder="Mustermann">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>E-Mail *</label>
+                <input type="email" name="email" required placeholder="max@example.ch">
+              </div>
+              <div class="form-field">
+                <label>Telefon *</label>
+                <input type="tel" name="telefon" required placeholder="079 000 00 00">
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Nachricht *</label>
+              <textarea name="nachricht" rows="5" required placeholder="Beschreiben Sie Ihr Projekt oder Anliegen..."></textarea>
+            </div>
+            <button class="btn primary" type="submit">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Nachricht senden
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="assets/img/logo.png" alt="Murtishi Haustechnik GmbH" class="footer-logo">
+      <div class="footer-links">
+        <a href="#home">Start</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2026 Murtishi Haustechnik GmbH · Recherswil - Created by Madrit Murtishi</p>
+        <a href="#home" class="back-top">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

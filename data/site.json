@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "tag": "Sanitär · Heizung · Lüftung · Service",
+    "titleLine1": "Murtishi",
+    "titleLine2": "Haustechnik",
+    "subtitle": "Ihr verlässlicher Partner für Sanitär- und Heizungsanlagen — Neubau, Umbau und Service in Recherswil und Umgebung.",
+    "primaryButton": "Projekt besprechen",
+    "secondaryButton": "Leistungen entdecken",
+    "phone": "076 390 45 62"
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Qualität, Verlässlichkeit und Leidenschaft",
+    "lead": "Wir sind Ihr Partner für alle sanitären Belange rund um Ihr Haus. Unser Anspruch ist hochwertige, verlässliche Arbeit — damit Ihre Anforderungen mehr als erfüllt werden.",
+    "text": "Unser freundliches, kompetentes Team von Experten arbeitet effizient mit modernen Standards und Technologien. Von der Planung bis zur Fertigstellung sind wir an Ihrer Seite.",
+    "features": [
+      "Zuverlässige Terminplanung",
+      "Moderne Materialien & Technik",
+      "Saubere & präzise Ausführung",
+      "Transparente Preisgestaltung"
+    ]
+  },
+  "services": [
+    {
+      "title": "Sanitärinstallationen",
+      "text": "Planung und Ausführung von Sanitäranlagen für Wohn- und Gewerbeobjekte nach modernsten Standards."
+    },
+    {
+      "title": "Heizungsanlagen",
+      "text": "Zuverlässige Lösungen für Neubau, Umbau und Modernisierung — energieeffizient und nachhaltig."
+    },
+    {
+      "title": "Umbau & Renovation",
+      "text": "Saubere Umsetzung von Badezimmerumbauten und haustechnischen Anpassungen mit Präzision."
+    },
+    {
+      "title": "Servicearbeiten",
+      "text": "Boiler-Entkalkung, Spülkastenservice und laufende Unterhaltsarbeiten — schnell und zuverlässig."
+    }
+  ],
+  "quickService": [
+    {
+      "icon": "🔥",
+      "title": "Boiler Entkalkung",
+      "text": "Regelmässige Pflege für maximale Effizienz und lange Lebensdauer Ihrer Anlage."
+    },
+    {
+      "icon": "🚿",
+      "title": "Spülkastenservice",
+      "text": "Professionelle Servicearbeiten für reibungslose Funktion Ihrer Sanitäranlagen."
+    },
+    {
+      "icon": "📲",
+      "title": "Rückruf-Service",
+      "text": "Hinterlassen Sie Ihre Anfrage — wir melden uns innerhalb von 24 Stunden zurück."
+    }
+  ],
+  "hours": [
+    {
+      "day": "Mo",
+      "time": "7:00–17:00",
+      "closed": false
+    },
+    {
+      "day": "Di",
+      "time": "7:00–17:00",
+      "closed": false
+    },
+    {
+      "day": "Mi",
+      "time": "7:00–17:00",
+      "closed": false
+    },
+    {
+      "day": "Do",
+      "time": "7:00–17:00",
+      "closed": false
+    },
+    {
+      "day": "Fr",
+      "time": "7:00–17:00",
+      "closed": false
+    },
+    {
+      "day": "Sa",
+      "time": "Geschlossen",
+      "closed": true
+    },
+    {
+      "day": "So",
+      "time": "Geschlossen",
+      "closed": true
+    }
+  ],
+  "contact": {
+    "company": "Murtishi Haustechnik GmbH",
+    "address": "Hauptstrasse 214, 4565 Recherswil",
+    "phone": "076 390 45 62",
+    "email": "info@murtishihaustechnik.ch",
+    "intro": "Zögern Sie nicht, uns zu kontaktieren. Wir besprechen Ihr Projekt gerne unverbindlich und erstellen Ihnen ein individuelles Angebot.",
+    "mapQuery": "Hauptstrasse 214, 4565 Recherswil, Schweiz"
+  }
+}
