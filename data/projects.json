@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "title": "WC – Gewerbehalle Recherswil",
+      "category": "Projekt",
+      "image": "https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_0296.jpg/picture-200?_=19ab09d5cd1",
+      "description": "Sanitärarbeiten und moderne Installationen für Gewerbehalle Recherswil.",
+      "featured": true
+    },
+    {
+      "title": "Einlegen Gewerbehalle Recherswil",
+      "category": "Projekt",
+      "image": "https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_9589.jpg/picture-200?_=19ab09d7ee4",
+      "description": "Professionelle Einlegearbeiten im Gewerbebau.",
+      "featured": true
+    },
+    {
+      "title": "Einlegen MFH Gerlafingen",
+      "category": "Projekt",
+      "image": "https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.Screenshot%202025-11-22%20140717.png/picture-200?_=19ab0a02d33",
+      "description": "Haustechnik- und Sanitärarbeiten für ein Mehrfamilienhaus.",
+      "featured": true
+    },
+    {
+      "title": "Badezimmer Umbau EFH",
+      "category": "Umbau",
+      "image": "https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_1553.jpg/picture-200?_=19ab0a97743",
+      "description": "Badezimmer-Umbau mit sauberer Ausführung und hochwertigen Materialien.",
+      "featured": false
+    }
+  ]
+}

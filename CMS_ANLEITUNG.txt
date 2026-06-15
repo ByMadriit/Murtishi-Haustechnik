@@ -1,0 +1,26 @@
+CMS-Anleitung für die Murtishi Haustechnik Webseite
+
+Admin-Adresse nach dem Deploy:
+  https://deine-domain.ch/admin/
+
+Wichtig:
+- Das CMS funktioniert nicht mit reinem ZIP-Drag-and-drop Hosting.
+- Für Speichern/Ändern braucht es GitHub + Netlify Git Gateway.
+
+Netlify Einrichtung:
+1. Website-Ordner in ein GitHub Repository hochladen.
+2. Netlify: Add new site > Import from Git > Repository auswählen.
+3. Netlify: Project configuration > Identity > Enable Identity.
+4. Registration preferences: Invite only.
+5. Identity > Services > Git Gateway > Enable Git Gateway.
+6. Identity > Invite users > Admin-Mail einladen.
+7. Danach /admin öffnen und Inhalte bearbeiten.
+
+Im CMS kannst du bearbeiten:
+- Startseiten-Texte
+- Über uns
+- Leistungen
+- Service-Karten
+- Öffnungszeiten
+- Kontakt / Standort / E-Mail / Telefon
+- Neue Projekte inklusive Bild-Upload
