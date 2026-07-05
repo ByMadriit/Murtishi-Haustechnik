@@ -1,0 +1,88 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+display_url: "/"
+
+collections:
+  - name: "website"
+    label: "Website bearbeiten"
+    files:
+      - name: "site"
+        label: "Allgemeine Inhalte"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "Hero / Startseite"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Label oben", name: "tag", widget: "string" }
+              - { label: "Titel Zeile 1", name: "titleLine1", widget: "string" }
+              - { label: "Titel Zeile 2", name: "titleLine2", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+              - { label: "Button 1", name: "primaryButton", widget: "string" }
+              - { label: "Button 2", name: "secondaryButton", widget: "string" }
+              - { label: "Telefon oben", name: "phone", widget: "string" }
+          - label: "Über uns"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Kleiner Titel", name: "eyebrow", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Lead Text", name: "lead", widget: "text" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Vorteile"
+                name: "features"
+                widget: "list"
+                field: { label: "Vorteil", name: "feature", widget: "string" }
+          - label: "Leistungen"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Service-Karten"
+            name: "quickService"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Öffnungszeiten"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Tag", name: "day", widget: "string" }
+              - { label: "Zeit", name: "time", widget: "string" }
+              - { label: "Geschlossen", name: "closed", widget: "boolean", default: false, required: false }
+          - label: "Kontakt"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Firma", name: "company", widget: "string" }
+              - { label: "Adresse", name: "address", widget: "string" }
+              - { label: "Telefon", name: "phone", widget: "string" }
+              - { label: "E-Mail", name: "email", widget: "string" }
+              - { label: "Kontakttext", name: "intro", widget: "text" }
+              - { label: "Google Maps Suche", name: "mapQuery", widget: "string" }
+      - name: "projects"
+        label: "Projekte verwalten"
+        file: "data/projects.json"
+        format: "json"
+        fields:
+          - label: "Projekte"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Kategorie", name: "category", widget: "string", default: "Projekt" }
+              - { label: "Bild", name: "image", widget: "image", required: false }
+              - { label: "Beschreibung", name: "description", widget: "text", required: false }
+              - { label: "Hervorgehoben", name: "featured", widget: "boolean", default: false, required: false }
