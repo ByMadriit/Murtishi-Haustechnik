@@ -22,17 +22,11 @@
       "featured": true
     },
     {
-      "title": "Badezimmer Umbau EFH",
-      "category": "Umbau",
-      "image": "https://murtishihaustechnik.ch/.cm4all/uproc.php/0/.IMG_1553.jpg/picture-200?_=19ab0a97743",
-      "description": "Badezimmer-Umbau mit sauberer Ausführung und hochwertigen Materialien.",
-      "featured": false
-    },
-    {
       "category": "Neubau",
       "featured": false,
       "title": "Wilerstrasse 1-3",
-      "description": "24 Badezimmer"
+      "description": "24 Badezimmer",
+      "image": "/assets/uploads/img_5283.jpeg"
     }
   ]
 }
